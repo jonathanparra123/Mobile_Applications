@@ -12,7 +12,7 @@ constructor(props){
 
         //class variables for state
         this.state = {
-            count: 25,
+            count: 20,
             score: 0,
             won: false,
             complete: false,
@@ -70,7 +70,6 @@ StartButton(){
             if(!this.state.won && !this.state.complete){
             return(
                 <View style = {styles.container2}>
-    
                 <Text style = {styles.congrats}>
                     Tap at least 15 squares to advance!
                     </Text>
@@ -87,14 +86,15 @@ StartButton(){
 
                 return(
                 <View style = {styles.container2}>
-    
                 <Text style = {styles.congrats}>
-                    CONGRATS!!!!
+                CONGRATS!!!!
+                </Text>
+                <Text style = {styles.score}>
+                your score was: {this.state.score}
                 </Text>
                 <StartButtons
                 name = 'Start Level 2'
-                pressing = {()=>this.RunPlayLevel2()}/> 
-    
+                pressing = {()=>this.RunPlayLevel2()}/>
                  </View>
              )
             }
@@ -107,7 +107,10 @@ StartButton(){
                     <View style = {styles.container2}>
         
                     <Text style = {styles.congrats}>
-                        You Win!
+                     You Win!
+                    </Text>
+                    <Text style = {styles.score}>
+                     your score was: {this.state.score}
                     </Text>
                     <StartButtons
                     name = 'Play again'
@@ -246,7 +249,8 @@ RunPlayLevel2(){
             this.setState((prevState)=>{
                 return{
                     level2: !prevState.level2,
-                    count: 20,
+                    count: 15,
+                    score: 0,
                 }
             }
        )
@@ -266,7 +270,7 @@ RunPlayLevelAgain(){
             this.setState((prevState)=>{
                 return{
                     complete: false,
-                    count: 25,
+                    count: 20,
                     score: 0,
                     won: false,
                 }
@@ -290,7 +294,7 @@ RunPlayLevelAgain2(){
                 lost: false,
                 level1: false,
                 level2: false,
-                count: 25,
+                count: 20,
                 score: 0,
                 complete: false,
                 won: false,
@@ -357,7 +361,6 @@ check(){
         this.setState(
             (prevState)=> {
                 return{
-        score: 0,
         won: !prevState.won,
         level1: !prevState.level1,
         }
@@ -385,7 +388,6 @@ check2(){
      this.setState(
         (prevState)=> {
             return{
-        score: 0,
         won: !prevState.won,
         complete: !prevState.complete,
         level2: !prevState.level2,

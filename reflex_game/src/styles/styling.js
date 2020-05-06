@@ -2,12 +2,14 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
 
+//style for main screen
     title:{
         color:'red',
         fontSize:40,
         alignSelf: 'center',
     },
 
+//main screen container
     main_container:{
         flex: 1,
         flexDirection:'column',
@@ -15,6 +17,7 @@ export default StyleSheet.create({
         justifyContent: 'space-around',
     },
 
+//containers for grids
     container1:{
         flex:1,
     },
@@ -41,12 +44,13 @@ export default StyleSheet.create({
         alignItems:'center',
     },
 
+//style container for buttons and tiles
     startButton: {
         textAlign: 'center', 
-        fontSize: 30,
+        fontSize: 20,
         color: 'white',
         backgroundColor:'black',
-        height: 80,
+        height: 70,
         width: 100,
       },
 
@@ -73,6 +77,12 @@ export default StyleSheet.create({
           color: 'red',
           textAlign: 'center',
       },
+
+      score:{
+            fontSize: 30,
+            color: 'red',
+            textAlign: 'center',
+            },
 
       buttonShow:{
             backgroundColor:'yellow',
