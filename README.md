@@ -20,3 +20,9 @@ move to the next level where there is less time to complete the task. The
 game comes with a replay button if the player wins or loses.
 
 ***************************************************************************
+
+moive_app is very basic movie application. You can browse any movie or 
+actor/actress, the app has a search bar and genre catagorie. The data
+comes from themoviedb.org.
+
+***************************************************************************
