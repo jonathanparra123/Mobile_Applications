@@ -26,3 +26,9 @@ actor/actress, the app has a search bar and genre catagorie. The data
 comes from themoviedb.org.
 
 ***************************************************************************
+
+list_creator is a handy little app that creates different kinds of lists.
+It lets you create any number of lists with any number of items in them,
+in addition, you can also delete each list.
+
+***************************************************************************
