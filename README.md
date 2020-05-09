@@ -32,3 +32,12 @@ It lets you create any number of lists with any number of items in them,
 in addition, you can also delete each list.
 
 ***************************************************************************
+
+alter_transportation is an ongoing project that keeps track of alternitive
+transportation to save on gas and be more enviromental concious. The app
+lets you create a profile where you can track how much you use alternitive 
+transportation such as biking, public transportation, and even carpooling.
+The app even gives you rewards based on how many alternitive transportation
+you have participating in.
+
+*****************************************************************************
