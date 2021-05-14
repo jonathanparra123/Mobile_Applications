@@ -1,6 +1,6 @@
 let ApiMovieService = class ApiMovieService {
   constructor() {
-    this.apiKey = '904df68f9b1bae895734a0a453faa413';
+    this.apiKey = key;
     this.apiProtocol = 'https://';
     this.apiHost = 'api.themoviedb.org/3/discover/movie?api_key=';
     this.filter = '&sort_by=popularity.desc&with_genres=';
