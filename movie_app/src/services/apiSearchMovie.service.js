@@ -1,6 +1,6 @@
 let ApiSearchMovie = class ApiSearchMovie {
   constructor() {
-    this.apiKey = '904df68f9b1bae895734a0a453faa413';
+    this.apiKey = key;
     this.apiProtocol = 'https://';
     this.apiHost = 'api.themoviedb.org/3/search/movie?api_key=';
     this.query = '&query=';
